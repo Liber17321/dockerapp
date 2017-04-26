@@ -45,26 +45,15 @@ end
 
 
 gem 'haml-rails'
-gem 'hamlit'
 gem 'bootstrap-sass'
 gem 'pry-rails'
 gem 'pry-byebug'
 gem 'puma'
-gem 'redcarpet'
-gem 'font-awesome-sass'
-group :development do
-  gem 'better_errors'
-  gem 'quiet_assets'
-  gem 'erb2haml'
-  gem 'binding_of_caller'
-end
-
 group :test do
-  gem 'minitest-utils'
-  gem 'database_cleaner'
+  gem 'minitest-rails'
 end
 
-group :development, :test do
-  gem 'letter_opener'
-  gem 'dotenv-rails'
+group :production do
+  gem "pg"
 end
+
